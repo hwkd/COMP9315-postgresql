@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker stop postgresql
+docker kill pg

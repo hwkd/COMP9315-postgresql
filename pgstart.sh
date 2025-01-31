@@ -8,10 +8,10 @@ if [ -z "$TAG" ]; then
 fi
 
 docker run -dit \
-    --name postgresql \
-    --rm \
+    --name pg \
     -p 5432:5432 \
     -e POSTGRES_USER=postgres \
     -e POSTGRES_PASSWORD=postgres \
     -v comp9315:/var/lib/postgresql/data \
+    -v $(pwd)/data:/data \
     $IMAGE_NAME:$TAG

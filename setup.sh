@@ -25,8 +25,8 @@ else
   sed -i "s/^ARG POSTGRES_VERSION=.*/ARG POSTGRES_VERSION=${POSTGRES_VERSION}/" Dockerfile
 fi
 
-# if [ ! -d "data" ]; then
-#   mkdir data
-# fi
+if [ ! -d "data" ]; then
+  mkdir data
+fi
 
 echo 'Setup complete'

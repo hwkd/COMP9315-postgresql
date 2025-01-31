@@ -6,6 +6,7 @@
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
 - [Development](#development)
+- [Docker Commands](#docker-commands)
 
 ## Introduction
 
@@ -17,6 +18,9 @@ By using Docker, you can automate the process of building it from source, make e
 any software on your computer just to build PostgreSQL, and help you easily manage your version of PostgreSQL.
 
 This repository helps you to easily setup PostgreSQL for COMP9315 and manage your builds using Docker.
+
+If you want to make changes to the setup, repository, and any part of it, feel free to fork this repository and make
+changes as you see fit.
 
 ## Prerequisites
 
@@ -97,6 +101,14 @@ To stop the PostgreSQL container.
 ./pgstop.sh
 ```
 
+### `data` directory
+
+The `data` directory is mounted to `/data` in the Docker container, so you can store seed data, query files, and any
+other files from your host machine that you want to use inside the PostgreSQL container.
+
+In other words, if you `docker exec -it pg bash` into the container, you will see the contents of the `data` directory
+in the `/data` directory.
+
 ## Docker Commands
 
 Some helpful Docker commands you might use:
@@ -112,7 +124,7 @@ docker exec -it 49a2bfe5e2da bash
 # Using the container name
 docker exec -it <container_name> bash
 # Example
-docker exec -it postgresql bash
+docker exec -it pg bash
 ```
 
 List Docker images on your machine:
