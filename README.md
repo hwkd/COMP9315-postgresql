@@ -28,6 +28,12 @@ changes as you see fit.
 - Git
 - Docker (>= v25.0.0)
 
+## Note for Windows users
+
+This repository is designed to work on MacOS and Linux since the scripts only run on Unix based systems. However, with
+some extra steps, you should be able to use this setup on Windows. I don't have a Windows machine so I didn't bother
+to test it on Windows, but you should be able to use the Dockerfile and the docker commands to build and run the containers.
+
 ## Setup
 
 1. Clone this repository.
@@ -46,7 +52,7 @@ cd ./COMP9315-postgresql
 
 ```bash
 # Update this line in the "setup.sh" file
-POSTGRES_VERSION=17.2
+POSTGRES_VERSION=15.11
 ```
 
 ```bash

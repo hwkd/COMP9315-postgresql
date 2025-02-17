@@ -4,7 +4,8 @@
 set -e
 
 # Set the version of PostgreSQL you need to use
-POSTGRES_VERSION=17.2
+# POSTGRES_VERSION=17.2
+POSTGRES_VERSION=15.11
 
 # Check that the Dockerfile exists
 if [ ! -f "Dockerfile" ]; then

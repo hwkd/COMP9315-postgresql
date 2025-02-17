@@ -1,6 +1,6 @@
 FROM ubuntu:24.10
 
-ARG POSTGRES_VERSION=17.2
+ARG POSTGRES_VERSION=15.11
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PATH="/usr/local/pgsql/bin:${PATH}"
