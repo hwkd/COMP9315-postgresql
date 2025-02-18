@@ -109,7 +109,7 @@ To stop the PostgreSQL container.
 
 ### `data` directory
 
-The `data` directory is mounted to `/data` in the Docker container, so you can store seed data, query files, and any
+The `data` directory is mounted to `/data` directory inside the Docker container, so you can store seed data, query files, and any
 other files from your host machine that you want to use inside the PostgreSQL container.
 
 In other words, if you `docker exec -it pg bash` into the container, you will see the contents of the `data` directory
