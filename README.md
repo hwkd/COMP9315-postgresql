@@ -72,13 +72,22 @@ POSTGRES_VERSION=15.11
 ```bash
 # Start the PostgreSQL container with the "latest" tag by default
 ./pgstart.sh
+
+# or use "1.0.0" tag
+./pgstart.sh 1.0.0
+```
+
+6. Kill the PostreSQL container.
+
+```bash
+./pgstop.sh
 ```
 
 ## Development
 
-Make changes to the source code in the `postgresql-{version}` directory as you normally would on any project.
+Make changes to the source code in the `postgresql-{version}` directory as you normally would.
 
-When you can want to run the build, you can do so using `./build.sh` script:
+When you can want to compile it (run the build), you can do so using `./build.sh` script:
 
 ```bash
 # Build the Docker image with the "latest" tag by default
