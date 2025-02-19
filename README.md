@@ -51,7 +51,7 @@ cd ./COMP9315-postgresql
 3. Set the postgres version you need to use in the `setup.sh` file, then run the setup script.
 
 ```bash
-# Update this line in the "setup.sh" file
+# Update this line in the "setup.sh" file (only if you want to use a different version)
 POSTGRES_VERSION=15.11
 ```
 
